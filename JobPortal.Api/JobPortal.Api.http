@@ -1,0 +1,71 @@
+@JobPortal.Api_HostAddress = http://localhost:5203
+
+GET {{JobPortal.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+GET {{JobPortal.Api_HostAddress}}/api/user
+
+###
+
+
+POST {{JobPortal.Api_HostAddress}}/api/user
+Content-Type: application/json
+
+{
+  
+  "EmailAddress": "test@test.com",
+  "Password" : "test@test.com"
+
+
+}
+
+###
+
+PUT {{JobPortal.Api_HostAddress}}/api/user/1
+Content-Type: application/json
+
+{
+  
+  "EmailAddress": "test@test.com",
+  "Password" : "test2@test2.com"
+
+
+}
+
+###
+
+GET {{JobPortal.Api_HostAddress}}/api/personalinfo
+
+###
+
+POST {{JobPortal.Api_HostAddress}}/api/personalinfo
+Content-Type: application/json
+
+{
+  
+  "FirstName": "test@test.com",
+  "LastName" : "test2@test2.com",
+  
+  "MobileNumber": "test@test.com",
+  "PhoneNumber" : "test2@test2.com",
+  
+  "Description": "test@test.com",
+  "IsActive" : false,
+  
+  "UserId": 1,
+  
+
+
+}
+
+###
+
+GET {{JobPortal.Api_HostAddress}}/api/jobinfo
+
+###
+
+GET {{JobPortal.Api_HostAddress}}/api/jobinfo
+
+###
